@@ -37,6 +37,8 @@ cd proteomics-chatbot-application
 ```bash
 cd backend
 python -m venv venv
+OR
+python3 -m venv venv
 source venv/bin/activate  # On Windows use: .\venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -53,7 +55,7 @@ npm install
    * uniprot_vector_store.index
    * uniprot_metadata.csv
 
-2. Install Ollama and download the LLaMA model:
+2. Install Ollama and download the LLaMA model in backend/:
 ```bash
 # Install Ollama from https://ollama.ai/
 ollama pull llama3.2:1b
