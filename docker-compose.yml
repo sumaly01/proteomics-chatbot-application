@@ -5,10 +5,10 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
-      - "11434:11434"  # Expose Ollama port
+      - "11434:11434" # Expose Ollama port
     volumes:
       - ./backend:/app
-      - ollama_data:/root/.ollama  # Persist Ollama models
+      - ollama_data:/root/.ollama # Persist Ollama models
     environment:
       - FLASK_ENV=development
     working_dir: /app
@@ -24,6 +24,5 @@ services:
       - ./frontend:/app
     environment:
       - CHOKIDAR_USEPOLLING=true
-
-volumes:
-  ollama_data:  # Define the volume for Ollama models
+# volumes:
+#   ollama_data:  # Define the volume for Ollama models
