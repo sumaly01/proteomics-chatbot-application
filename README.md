@@ -29,7 +29,7 @@ This application combines protein search capabilities with a conversational inte
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/protein-search.git
+git clone https://github.com/sumaly01/proteomics-chatbot-application.git
 cd proteomics-chatbot-application
 ```
 
@@ -98,20 +98,26 @@ Show organism name of Clarin-2 and Clarin-3
 ## Project Structure
 
 ```
-protein-search/
+proteomics-chatbot-application/
 ├── backend/
-│   ├── app.py
+│   ├── Dockerfile
+│   ├── query_db.py
 │   ├── requirements.txt
+│   ├── transformer.py
+│   ├── uniprot_data_fetch.py
+│   ├── uniprot_extracted_data.csv
+│   ├── uniprot_metadata.csv
 │   ├── uniprot_vector_store.index
-│   └── uniprot_metadata.csv
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
 │   │   │   ├── ChatInterface.jsx
+│   │   │   ├── Header.jsx
+│   │   │   ├── InputArea.jsx
+│   │   │   ├── LoadingIndicator.jsx
 │   │   │   ├── Message.jsx
-│   │   │   ├── MessageList.jsx
-│   │   │   └── InputArea.jsx
-│   │   └── App.js
+│   │   │   └── MessageList.jsx
+│   │   └── App.jsx
 │   └── package.json
 └── README.md
 ```
@@ -136,41 +142,6 @@ Response:
   }
 }
 ```
-
-## Common Issues & Solutions
-
-1. **FAISS Index Error**
-   * Make sure the index file is in the correct location
-   * Verify the file permissions
-
-2. **LLaMA Model Issues**
-   * Ensure Ollama is running
-   * Verify the model is downloaded correctly
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## Authors
-
-* Your Name
-* Contact: your.email@example.com
-
-## Version History
-
-* 1.0.0
-    * Initial Release
-    * Basic search functionality
-* 1.1.0
-    * Added filtering and sorting
-    * Improved response formatting
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
