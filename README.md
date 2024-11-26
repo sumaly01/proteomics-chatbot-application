@@ -33,11 +33,19 @@ git clone https://github.com/sumaly01/proteomics-chatbot-application.git
 cd proteomics-chatbot-application
 ```
 
+2. Virtual environment
+In root folder
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use: .\venv\Scripts\activate
+OR
+python3 -m venv venv
+source venv/bin/activate  # On Windows use: .\venv\Scripts\activate
+```
+
 2. Set up backend
 ```bash
 cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows use: .\venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -53,9 +61,10 @@ npm install
    * uniprot_vector_store.index
    * uniprot_metadata.csv
 
-2. Install Ollama and download the LLaMA model:
+2. Install Ollama and download the LLaMA model in backend/:
 ```bash
 # Install Ollama from https://ollama.ai/
+cd backend
 ollama pull llama3.2:1b
 ```
 
