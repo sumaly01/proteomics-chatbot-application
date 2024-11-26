@@ -34,7 +34,7 @@ cd proteomics-chatbot-application
 ```
 
 2. Virtual environment
-In root folder
+in root folder
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows use: .\venv\Scripts\activate
@@ -43,13 +43,13 @@ python3 -m venv venv
 source venv/bin/activate  # On Windows use: .\venv\Scripts\activate
 ```
 
-2. Set up backend
+3. Set up backend
 ```bash
 cd backend
 pip install -r requirements.txt
 ```
 
-3. Set up frontend
+4. Set up frontend
 ```bash
 cd frontend
 npm install
