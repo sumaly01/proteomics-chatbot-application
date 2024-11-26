@@ -9,7 +9,8 @@ import re
 from typing import List, Dict, Any, Tuple
 
 app = Flask(__name__)
-CORS(app, resources={r"/chatbot": {"origins": "http://localhost:3000"}})
+# Allow all origins for now 
+CORS(app)
 
 # Load the embedding model
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
@@ -108,7 +109,7 @@ def generate_response_with_llama(query: str, context: List[Dict],
         model="llama3.2:1b",
         messages=[{"role": "assistant", "content": prompt}]
     )
-    return response["message"]
+    return response["message"]["content"]
 
 @app.route("/chatbot", methods=["POST"])
 def chatbot():

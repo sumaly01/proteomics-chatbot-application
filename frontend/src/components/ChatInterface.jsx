@@ -40,7 +40,7 @@ const ChatInterface = () => {
       // Add bot message
       const botMessage = {
         type: 'bot',
-        content: response.data.response.content,
+        content: response.data.response,
         timestamp: new Date().toISOString(),
       };
       setMessages(prev => [...prev, botMessage]);
