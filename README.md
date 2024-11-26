@@ -30,7 +30,7 @@ This application combines protein search capabilities with a conversational inte
 1. Clone the repository
 ```bash
 git clone https://github.com/your-username/protein-search.git
-cd protein-search
+cd proteomics-chatbot-application
 ```
 
 2. Set up backend
