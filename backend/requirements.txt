@@ -1,7 +1,7 @@
-Flask
+flask
 flask-cors
 sentence-transformers
 faiss-cpu
 pandas
-numpy
+numpy<2.0
 ollama
