@@ -1,5 +1,5 @@
 # proteomics-chatbot-application
-# Protein Search Assistant
+# Proteomics Chatbot Application
 
 A conversational AI system that helps users search protein information using natural language queries.
 
@@ -137,18 +137,16 @@ proteomics-chatbot-application/
 Process user queries and return protein information.
 
 Request body:
-```json
+```
 {
-  "query": "string"
+  query: "string"
 }
 ```
 
 Response:
 ```json
 {
-  "response": {
-    "content": "string"
-  }
+  "response":  "string"
 }
 ```
 
